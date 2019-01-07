@@ -1,7 +1,5 @@
-src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-
-// Event listener for all button elements
-$("button").on("click", function () {
+ // Event listener for all button elements
+ $("button").on("click", function() {
   // In this case, the "this" keyword refers to the button that was clicked
   var person = $(this).attr("data-person");
 
@@ -11,11 +9,11 @@ $("button").on("click", function () {
 
   // Performing our AJAX GET request
   $.ajax({
-      url: queryURL,
-      method: "GET"
-    })
+    url: queryURL,
+    method: "GET"
+  })
     // After the data comes back from the API
-    .then(function (response) {
+    .then(function(response) {
       // Storing an array of results in the results variable
       var results = response.data;
 
