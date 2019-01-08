@@ -14,9 +14,11 @@
 <body>
   <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-default">Type a GIF you want to See!</span>
+      <span class="input-group-text" >Type a GIF you want to See!</span>
     </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    <form id="searchForm">
+    <input id="search" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </form>
   </div>
 
   <button data-person="Donald Trump">Trump</button>
@@ -29,7 +31,7 @@
   <button data-person="Joe Biden">Biden</button>
   <button data-person="Chris Christie">Christie</button>
   <button data-person="Elizabeth Warren">Warren</button>
-  <div id = "searchButton"></div>
+  <div id = "buttons"></div>
 
   <div id="gifs-appear-here" data-still="https://api.giphy.com/v1/gifs/search?q=" +person data-animate="https://api.giphy.com/v1/gifs/search?q="
     +person class="gif" data-state="still"></div>
